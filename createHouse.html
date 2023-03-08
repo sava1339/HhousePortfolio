@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание дома</title>
+    <link rel="stylesheet" href="./CSS/createHouse.css">
+</head>
+<body>
+    <aside>
+        
+    </aside>
+    <div id="top">
+        <img class="floatLeft imgLogo" onclick="clLogo()" id="imgLogo" src="SVG/res1.svg" alt="">
+        <a href="./index.html"><p class="floatLeft suiteName font">Hhouse</p></a>
+        <a href="./createHouse.html"><p class="floatLeft underline paddingLeft font">Дома</p></a>
+        <p class="floatRight underline font">Войти</p>
+        <p class="floatRight underline font">Регистрация</p>
+    </div>
+    <div id="centerInput">
+        <form method="get" action="/target/">
+            <p class="font" for="">Название дома:</p>
+            <input name="homeName" class="input " id="inputNameHouse" type="text"><br>
+                <p class="font" for="">Цена за день:</p>
+                <input name="homePrice" class="input " id="inputPriceHouse" type="number"><br>
+                <p class="font" for="">Квадратных метров:</p>
+                <input name="homeM" value="" class="input" placeholder="м²" id="inputMHouse" type="number"><br>
+                <p class="font" for="">Страна:</p>
+                <input name="homeCountry" class="input " id="inputCountry" type="text"><br>
+                <p class="font" for="">Область:</p>
+                <input name="homeRegion" class="input " id="inputRegion" type="text"><br>
+                <p class="font" for="">Город:</p>
+                <input name="homeTown" class="input " id="inputTown" type="text"><br>
+                <p class="font" for="">Номер для связи:</p>
+                <input name="inputTel" class="input " id="inputTel" type="text"><br>
+            <button type="submit" id="inputButt" onclick="EnterValueHouse()">Отправить</button>
+        </form>
+    </div>
+    <div id="main"></div>
+    <script src="./JS/inputHouseData.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
